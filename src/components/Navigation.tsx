@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import febeLogo from "@/assets/febe-logo.png";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,12 +38,10 @@ const Navigation = () => {
           {/* Logo */}
           <a
             href="#home"
-            className="flex items-center space-x-2 group"
+            className="flex items-center hover:opacity-80 transition-opacity"
             aria-label="Febe Coffee Home"
           >
-            <span className="font-display text-xl lg:text-2xl font-bold text-foreground group-hover:text-primary transition-colors">
-              FEBE COFFEE
-            </span>
+            <img src={febeLogo} alt="Febe Coffee" className="h-12 lg:h-14 w-auto" />
           </a>
 
           {/* Desktop Navigation */}
