@@ -63,32 +63,25 @@ const Reviews = () => {
                 <h2 className="font-display text-3xl font-medium text-primary mb-6 text-center">
                   Yelp Reviews
                 </h2>
-                <div className="relative w-full bg-gray-50 rounded-lg flex items-center justify-center p-8" style={{ minHeight: "600px" }}>
-                  <div className="text-center max-w-md">
-                    <svg className="w-16 h-16 text-primary mx-auto mb-4" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm3.5 13.5l-1.5-1.5-1.5 1.5-.5-2-2-.5 1.5-1.5-1.5-1.5 2-.5.5-2 1.5 1.5 1.5-1.5.5 2 2 .5-1.5 1.5 1.5 1.5-2 .5-.5 2z"/>
-                    </svg>
-                    <p className="text-foreground/70 mb-6">
-                      Yelp doesn't support iframe embeds. Click below to view our Yelp reviews directly.
-                    </p>
-                    <a
-                      href="https://www.yelp.com/biz/febe-coffee-irvine"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-block px-6 py-3 bg-primary text-background rounded-lg hover:bg-primary/90 transition-all duration-300 hover:scale-105 font-medium"
-                    >
-                      View on Yelp
-                    </a>
-                  </div>
+                <div className="relative w-full" style={{ minHeight: "600px" }}>
+                  <iframe
+                    src="https://www.yelp.com/biz/febe-coffee-irvine-3"
+                    width="100%"
+                    height="600"
+                    style={{ border: 0, borderRadius: "8px" }}
+                    allowFullScreen
+                    loading="lazy"
+                    title="Febe Coffee Yelp Reviews"
+                  />
                 </div>
                 <div className="mt-6 text-center">
                   <a
-                    href="https://www.yelp.com/writeareview/biz/febe-coffee-irvine"
+                    href="https://www.yelp.com/biz/febe-coffee-irvine-3"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-primary hover:text-primary/80 transition-colors underline"
+                    className="inline-block px-6 py-3 bg-primary text-background rounded-lg hover:bg-primary/90 transition-all duration-300 hover:scale-105 font-medium"
                   >
-                    Leave a Yelp Review
+                    View All Yelp Reviews
                   </a>
                 </div>
               </div>
