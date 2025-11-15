@@ -59,26 +59,50 @@ const Reviews = () => {
                 <h2 className="font-display text-3xl font-medium text-primary mb-6 text-center">
                   Yelp Reviews
                 </h2>
-                <div className="relative w-full" style={{ minHeight: "600px" }}>
-                  <iframe
-                    src="https://www.yelp.com/biz/febe-coffee-irvine-3"
-                    width="100%"
-                    height="600"
-                    style={{ border: 0, borderRadius: "8px" }}
-                    allowFullScreen
-                    loading="lazy"
-                    title="Febe Coffee Yelp Reviews"
-                  />
-                </div>
-                <div className="mt-6 text-center">
-                  <a
-                    href="https://www.yelp.com/biz/febe-coffee-irvine-3"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block px-6 py-3 bg-primary text-background rounded-lg hover:bg-primary/90 transition-all duration-300 hover:scale-105 font-medium"
-                  >
-                    View All Yelp Reviews
-                  </a>
+                <div className="relative w-full flex flex-col items-center justify-center p-8 bg-accent/30 rounded-lg" style={{ minHeight: "600px" }}>
+                  <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center mb-6 shadow-md">
+                    <svg className="w-12 h-12 text-[#d32323]" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm3.5 13.5l-1.5-1.5-1.5 1.5-.5-2-2-.5 1.5-1.5-1.5-1.5 2-.5.5-2 1.5 1.5 1.5-1.5.5 2 2 .5-1.5 1.5 1.5 1.5-2 .5-.5 2z"/>
+                    </svg>
+                  </div>
+                  
+                  <h3 className="font-display text-2xl font-medium text-primary mb-3">
+                    See What Our Customers Say
+                  </h3>
+                  
+                  <p className="text-foreground/70 text-center mb-8 max-w-md text-lg">
+                    Read authentic reviews from our Yelp community and discover why people love Febe Coffee
+                  </p>
+                  
+                  <div className="flex flex-col gap-4 w-full max-w-sm">
+                    <a
+                      href="https://www.yelp.com/biz/febe-coffee-irvine-3"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#d32323] text-white rounded-lg hover:bg-[#b91c1c] transition-all duration-300 hover:scale-105 font-medium text-lg shadow-lg"
+                    >
+                      <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm3.5 13.5l-1.5-1.5-1.5 1.5-.5-2-2-.5 1.5-1.5-1.5-1.5 2-.5.5-2 1.5 1.5 1.5-1.5.5 2 2 .5-1.5 1.5 1.5 1.5-2 .5-.5 2z"/>
+                      </svg>
+                      View All Yelp Reviews
+                    </a>
+                    
+                    <a
+                      href="https://www.yelp.com/writeareview/biz/febe-coffee-irvine-3"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-[#d32323] border-2 border-[#d32323] rounded-lg hover:bg-[#d32323] hover:text-white transition-all duration-300 font-medium text-lg"
+                    >
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                      </svg>
+                      Write a Review
+                    </a>
+                  </div>
+                  
+                  <p className="text-foreground/50 text-sm mt-6 text-center italic">
+                    Yelp doesn't support embedded reviews, but we'd love to hear from you!
+                  </p>
                 </div>
               </div>
 
