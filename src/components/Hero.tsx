@@ -39,9 +39,9 @@ const Hero = () => {
               variant="accent"
               size="lg"
               className="font-semibold text-base lg:text-lg px-8 py-6 hover:scale-105 rounded-lg w-full sm:w-auto"
-              onClick={() => document.getElementById("menu")?.scrollIntoView({ behavior: "smooth" })}
+              asChild
             >
-              View Menu
+              <a href="/menu">View Menu</a>
             </Button>
             <Button
               variant="coral"

@@ -111,9 +111,12 @@ const FeaturedDrinks = () => {
             variant="accent"
             size="lg"
             className="uppercase tracking-widest font-medium hover:scale-105 transition-transform duration-300"
+            asChild
           >
-            View Full Menu
-            <ArrowRight className="ml-2 w-4 h-4" />
+            <a href="/menu">
+              View Full Menu
+              <ArrowRight className="ml-2 w-4 h-4" />
+            </a>
           </Button>
         </div>
       </div>
