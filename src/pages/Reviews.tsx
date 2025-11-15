@@ -35,36 +35,12 @@ const Reviews = () => {
                   Google Reviews
                 </h2>
                 <div className="relative w-full" style={{ minHeight: "600px" }}>
-                  {/* Google Reviews Widget - Using Elfsight (Free) */}
-                  {/* To get your widget: 
-                      1. Go to https://elfsight.com/google-reviews-widget/
-                      2. Sign up for free
-                      3. Enter "Febe Coffee, 13955 Yale Ave Unit A, Irvine, CA 92620"
-                      4. Customize the widget
-                      5. Copy the embed code and replace the script src below
-                  */}
+                  {/* Elfsight Google Reviews Widget */}
                   <div 
-                    className="elfsight-app-d8c7e9a5-3b2a-4f5e-8e9d-1234567890ab"
+                    className="elfsight-app-8fe70488-5ef3-4f8c-96d6-a1424cf981da"
+                    data-elfsight-app-lazy
                     style={{ minHeight: "600px" }}
                   />
-                  <script 
-                    src="https://static.elfsight.com/platform/platform.js" 
-                    data-use-service-core
-                    defer
-                  />
-                  
-                  {/* Fallback: If widget not set up yet, show Google Maps */}
-                  <noscript>
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.0!2d-117.78447!3d33.65987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDM5JzM1LjUiTiAxMTfCsDQ3JzA0LjEiVw!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
-                      width="100%"
-                      height="600"
-                      style={{ border: 0, borderRadius: "8px" }}
-                      allowFullScreen
-                      loading="lazy"
-                      title="Febe Coffee Google Map and Reviews"
-                    />
-                  </noscript>
                 </div>
                 <div className="mt-6 text-center">
                   <a
