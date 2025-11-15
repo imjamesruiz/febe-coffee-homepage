@@ -17,12 +17,12 @@ const Navigation = () => {
   }, []);
 
   const navItems = [
-    { name: "Home", href: "#home" },
-    { name: "Menu", href: "#menu" },
-    { name: "About", href: "#about" },
-    { name: "Location", href: "#location" },
-    { name: "Collabs", href: "#collabs" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/" },
+    { name: "Menu", href: "/menu" },
+    { name: "About", href: "/about" },
+    { name: "Location", href: "/#location" },
+    { name: "Collabs", href: "/#collabs" },
+    { name: "Contact", href: "/#contact" },
   ];
 
   return (
@@ -37,7 +37,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <a
-            href="#home"
+            href="/"
             className="flex items-center hover:opacity-80 transition-opacity"
             aria-label="Febe Coffee Home"
           >

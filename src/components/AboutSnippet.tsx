@@ -59,8 +59,9 @@ const AboutSnippet = () => {
               variant="outline"
               size="lg"
               className="uppercase tracking-widest font-medium border-2 border-primary text-primary hover:bg-primary hover:text-background transition-all duration-300"
+              asChild
             >
-              Learn Our Story
+              <a href="/about">Learn Our Story</a>
             </Button>
           </div>
         </div>
