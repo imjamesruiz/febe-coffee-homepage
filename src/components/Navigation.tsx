@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { NavLink } from "@/components/NavLink";
 import febeLogo from "@/assets/febe-logo.png";
 
 const Navigation = () => {
@@ -21,9 +22,6 @@ const Navigation = () => {
     { name: "Menu", href: "/menu" },
     { name: "About", href: "/about" },
     { name: "Reviews", href: "/reviews" },
-    { name: "Location", href: "/#location" },
-    { name: "Collabs", href: "/#collabs" },
-    { name: "Contact", href: "/#contact" },
   ];
 
   return (
@@ -48,13 +46,14 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1 lg:space-x-2">
             {navItems.map((item) => (
-              <a
+              <NavLink
                 key={item.name}
-                href={item.href}
+                to={item.href}
                 className="px-3 lg:px-4 py-2 text-sm lg:text-base font-medium text-foreground hover:text-primary transition-colors rounded-md hover:bg-secondary/50"
+                activeClassName="text-primary bg-secondary/50"
               >
                 {item.name}
-              </a>
+              </NavLink>
             ))}
           </div>
 
@@ -79,14 +78,15 @@ const Navigation = () => {
           <div className="md:hidden py-4 border-t border-border animate-fade-in">
             <div className="flex flex-col space-y-2">
               {navItems.map((item) => (
-                <a
+                <NavLink
                   key={item.name}
-                  href={item.href}
+                  to={item.href}
                   className="px-4 py-3 text-base font-medium text-foreground hover:text-primary hover:bg-secondary/50 rounded-md transition-colors"
+                  activeClassName="text-primary bg-secondary/50"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.name}
-                </a>
+                </NavLink>
               ))}
             </div>
           </div>
