@@ -69,34 +69,40 @@ const Contact = () => {
     setIsLoading(true);
     
     try {
-      // TODO: Replace with actual API endpoint once Cloud is enabled
-      // const response = await fetch('/api/send-email', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify(formData),
-      // });
-      
-      // Simulate API call for now
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      
-      setIsSuccess(true);
-      toast({
-        title: "Message Sent!",
-        description: "Thank you! We'll get back to you within 24 hours.",
+      const response = await fetch(`${import.meta.env.VITE_SUPABASE_URL}/functions/v1/send-contact-email`, {
+        method: 'POST',
+        headers: { 
+          'Content-Type': 'application/json',
+          'apikey': import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY,
+        },
+        body: JSON.stringify(formData),
       });
+
+      const result = await response.json();
       
-      // Reset form
-      setFormData({
-        subject: "",
-        name: "",
-        email: "",
-        phone: "",
-        availability: "",
-        message: "",
-      });
-      
-      setTimeout(() => setIsSuccess(false), 5000);
+      if (response.ok && result.success) {
+        setIsSuccess(true);
+        toast({
+          title: "Message Sent!",
+          description: "Thank you! We'll get back to you within 24 hours.",
+        });
+        
+        // Reset form
+        setFormData({
+          subject: "",
+          name: "",
+          email: "",
+          phone: "",
+          availability: "",
+          message: "",
+        });
+        
+        setTimeout(() => setIsSuccess(false), 5000);
+      } else {
+        throw new Error(result.error || "Failed to send message");
+      }
     } catch (error) {
+      console.error("Error sending contact form:", error);
       toast({
         title: "Error",
         description: "Something went wrong. Please try again or email us directly at febecoffee@gmail.com",
