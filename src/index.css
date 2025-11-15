@@ -44,8 +44,9 @@ All colors MUST be HSL.
     
     /* Custom design tokens */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --shadow-soft: 0 2px 8px rgba(164, 74, 63, 0.08);
-    --shadow-medium: 0 4px 12px rgba(164, 74, 63, 0.12);
+    --shadow-soft: 0 2px 15px rgba(164, 74, 63, 0.08);
+    --shadow-medium: 0 8px 30px rgba(164, 74, 63, 0.12);
+    --shadow-elegant: 0 8px 24px rgba(164, 74, 63, 0.12);
 
     --sidebar-background: 0 0% 98%;
 
