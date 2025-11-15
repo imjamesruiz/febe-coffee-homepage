@@ -22,6 +22,7 @@ const Navigation = () => {
     { name: "Menu", href: "/menu" },
     { name: "About", href: "/about" },
     { name: "Reviews", href: "/reviews" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
@@ -49,8 +50,8 @@ const Navigation = () => {
               <NavLink
                 key={item.name}
                 to={item.href}
-                className="px-3 lg:px-4 py-2 text-sm lg:text-base font-medium text-foreground hover:text-primary transition-colors rounded-md hover:bg-secondary/50"
-                activeClassName="text-primary bg-secondary/50"
+                className="px-3 lg:px-4 py-2 text-sm lg:text-base font-medium text-primary hover:text-coral transition-colors rounded-md"
+                activeClassName="text-coral"
               >
                 {item.name}
               </NavLink>
@@ -81,8 +82,8 @@ const Navigation = () => {
                 <NavLink
                   key={item.name}
                   to={item.href}
-                  className="px-4 py-3 text-base font-medium text-foreground hover:text-primary hover:bg-secondary/50 rounded-md transition-colors"
-                  activeClassName="text-primary bg-secondary/50"
+                  className="px-4 py-3 text-base font-medium text-primary hover:text-coral rounded-md transition-colors"
+                  activeClassName="text-coral"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.name}
