@@ -1,5 +1,6 @@
 import { Heart } from "lucide-react";
 import Navigation from "@/components/Navigation";
+import FaqSection from "@/components/FaqSection";
 import strawberryMatcha from "@/assets/drink-strawberry-matcha.jpg";
 import bananaMatcha from "@/assets/drink-banana-matcha.jpg";
 import lotusEinspanner from "@/assets/drink-lotus-einspanner.jpg";
@@ -304,6 +305,9 @@ const Menu = () => {
           </div>
         </section>
       ))}
+
+      {/* FAQ Section */}
+      <FaqSection />
 
       {/* Bottom CTA */}
       <section className="py-20 bg-primary text-primary-foreground">
