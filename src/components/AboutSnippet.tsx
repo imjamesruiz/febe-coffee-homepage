@@ -54,15 +54,31 @@ const AboutSnippet = () => {
               ))}
             </div>
 
-            {/* CTA Button */}
-            <Button
-              variant="outline"
-              size="lg"
-              className="uppercase tracking-widest font-medium border-2 border-primary text-primary hover:bg-primary hover:text-background transition-all duration-300"
-              asChild
-            >
-              <a href="/about">Learn Our Story</a>
-            </Button>
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button
+                variant="outline"
+                size="lg"
+                className="uppercase tracking-widest font-medium border-2 border-primary text-primary hover:bg-primary hover:text-background transition-all duration-300"
+                asChild
+              >
+                <a href="/about">Learn Our Story</a>
+              </Button>
+              <Button
+                variant="outline"
+                size="lg"
+                className="uppercase tracking-widest font-medium border-2 border-primary text-primary hover:bg-primary hover:text-background transition-all duration-300"
+                asChild
+              >
+                <a 
+                  href="https://maps.google.com/?q=13955+Yale+Ave+Unit+A+Irvine+CA+92620" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  Get Directions
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </div>

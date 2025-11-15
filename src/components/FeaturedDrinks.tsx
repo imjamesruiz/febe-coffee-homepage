@@ -17,13 +17,6 @@ const FeaturedDrinks = () => {
       favorite: true,
     },
     {
-      name: "Banana Pudding Matcha",
-      description: "Matcha, milk, banana cream",
-      price: "$7",
-      image: bananaMatcha,
-      favorite: true,
-    },
-    {
       name: "Lotus Einspanner",
       description: "Espresso, milk, brown sugar, biscoff, biscoff cream",
       price: "$7",
@@ -35,20 +28,6 @@ const FeaturedDrinks = () => {
       description: "Hojicha, milk, black sesame cream",
       price: "$7",
       image: blackSesame,
-      favorite: true,
-    },
-    {
-      name: "Sea Salt Nutty",
-      description: "Espresso, milk, condensed milk, hazelnut, peanut cream",
-      price: "$7",
-      image: seaSaltNutty,
-      favorite: true,
-    },
-    {
-      name: "Matcha Einspanner",
-      description: "Matcha, milk, sweet cream",
-      price: "$7",
-      image: matchaEinspanner,
       favorite: true,
     },
   ];
