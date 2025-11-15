@@ -34,12 +34,12 @@ const Reviews = () => {
                 <h2 className="font-display text-3xl font-medium text-primary mb-6 text-center">
                   Google Reviews
                 </h2>
-                <div className="relative w-full" style={{ minHeight: "600px" }}>
+                <div className="relative w-full" style={{ minHeight: "500px" }}>
                   {/* Elfsight Google Reviews Widget */}
                   <div 
                     className="elfsight-app-8fe70488-5ef3-4f8c-96d6-a1424cf981da"
                     data-elfsight-app-lazy
-                    style={{ minHeight: "600px" }}
+                    style={{ minHeight: "500px" }}
                   />
                 </div>
                 <div className="mt-6 text-center">
@@ -59,7 +59,7 @@ const Reviews = () => {
                 <h2 className="font-display text-3xl font-medium text-primary mb-6 text-center">
                   Yelp Reviews
                 </h2>
-                <div className="relative w-full flex flex-col items-center justify-center p-8 bg-accent/30 rounded-lg" style={{ minHeight: "600px" }}>
+                <div className="relative w-full flex flex-col items-center justify-center p-8 bg-accent/30 rounded-lg" style={{ minHeight: "500px" }}>
                   <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center mb-6 shadow-md">
                     <svg className="w-12 h-12 text-[#d32323]" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm3.5 13.5l-1.5-1.5-1.5 1.5-.5-2-2-.5 1.5-1.5-1.5-1.5 2-.5.5-2 1.5 1.5 1.5-1.5.5 2 2 .5-1.5 1.5 1.5 1.5-2 .5-.5 2z"/>
