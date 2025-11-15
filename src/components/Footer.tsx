@@ -1,26 +1,8 @@
-import { Instagram, Music, Star, MapPin, Clock, Mail } from "lucide-react";
+import { Instagram, MapPin, Clock, Mail } from "lucide-react";
+import tiktokIcon from "@/assets/tiktok-icon.png";
+import yelpIcon from "@/assets/yelp-icon.png";
 
 const Footer = () => {
-  const socialLinks = [
-    {
-      name: "Instagram",
-      icon: Instagram,
-      url: "https://www.instagram.com/febe.coffee?igsh=MzRlODBiNWFlZA%3D%3D",
-      label: "Visit us on Instagram",
-    },
-    {
-      name: "TikTok",
-      icon: Music,
-      url: "https://www.tiktok.com/@febe.coffee?_t=ZP-8wJ2F95s8iM&_r=1",
-      label: "Follow us on TikTok",
-    },
-    {
-      name: "Yelp",
-      icon: Star,
-      url: "https://www.yelp.com/biz/febe-coffee-irvine-3",
-      label: "Read our Yelp reviews",
-    },
-  ];
 
   const quickLinks = [
     { name: "Home", href: "/" },
@@ -91,18 +73,48 @@ const Footer = () => {
               Follow Us
             </h4>
             <div className="flex gap-6">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.name}
-                  href={social.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={social.label}
-                  className="text-primary-foreground hover:text-accent transition-all duration-300 hover:scale-110"
-                >
-                  <social.icon className="w-8 h-8" />
-                </a>
-              ))}
+              {/* Instagram */}
+              <a
+                href="https://www.instagram.com/febe.coffee?igsh=MzRlODBiNWFlZA%3D%3D"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit us on Instagram"
+                className="text-primary-foreground hover:text-accent transition-all duration-300 hover:scale-110"
+              >
+                <Instagram className="w-8 h-8" />
+              </a>
+
+              {/* TikTok */}
+              <a
+                href="https://www.tiktok.com/@febe.coffee?_t=ZP-8wJ2F95s8iM&_r=1"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow us on TikTok"
+                className="transition-all duration-300 hover:scale-110"
+              >
+                <img 
+                  src={tiktokIcon} 
+                  alt="TikTok" 
+                  className="w-8 h-8"
+                  style={{ filter: 'brightness(0) saturate(100%) invert(85%) sepia(8%) saturate(463%) hue-rotate(349deg) brightness(102%) contrast(92%)' }}
+                />
+              </a>
+
+              {/* Yelp */}
+              <a
+                href="https://www.yelp.com/biz/febe-coffee-irvine-3"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Read our Yelp reviews"
+                className="transition-all duration-300 hover:scale-110"
+              >
+                <img 
+                  src={yelpIcon} 
+                  alt="Yelp" 
+                  className="w-8 h-8"
+                  style={{ filter: 'brightness(0) saturate(100%) invert(85%) sepia(8%) saturate(463%) hue-rotate(349deg) brightness(102%) contrast(92%)' }}
+                />
+              </a>
             </div>
           </div>
         </div>

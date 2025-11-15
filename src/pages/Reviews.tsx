@@ -10,12 +10,12 @@ const Reviews = () => {
       
       <main className="pt-20">
         {/* Header Section */}
-        <section className="bg-accent py-16 sm:py-20">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-medium text-primary mb-4">
+        <section className="bg-accent py-20 sm:py-24">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-4xl">
+            <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-medium text-primary mb-6">
               Thank you so much for your support
             </h1>
-            <p className="text-2xl sm:text-3xl text-primary/90 font-light mb-3">
+            <p className="text-2xl sm:text-3xl text-primary/90 font-light mb-4">
               We appreciate you!
             </p>
             <p className="text-xl sm:text-2xl text-primary/80 font-light">
@@ -25,9 +25,9 @@ const Reviews = () => {
         </section>
 
         {/* Reviews Section */}
-        <section className="py-16 sm:py-20 bg-background">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+        <section className="py-20 sm:py-24 bg-background">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
               
               {/* Left Column - Google Reviews */}
               <div className="bg-white rounded-xl shadow-elegant p-6 animate-fade-in">
