@@ -269,7 +269,7 @@ npm run type-check   # Run TypeScript compiler check
 - Optimized images (WebP, lazy loading)
 - Fast page load (<3 seconds)
 
-## 🚀 Deployment
+## Deployment
 
 ### Vercel (Recommended)
 1. Connect GitHub repository to Vercel
